@@ -5,6 +5,10 @@ We use them for honeypot on lugbs.linux.it domain.
 
 == ToDO ==
 
+About list name/surname:
+- add entries
+- remove foreing entries
+
 Add more email patterns:
 - name.surname@
 - surname.name@
