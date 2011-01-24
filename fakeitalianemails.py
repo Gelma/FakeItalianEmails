@@ -6,8 +6,8 @@ import copy, random, sys
 class OmenNomen:
 	"""Torno indirizzi nomi/cognomi/email a cazzo"""
 
-	cognomi_elenco = [riga.strip() for riga in open(sys.path[0]+'elenco_cognomi.txt','r')]
-	nomi_elenco = [riga.strip() for riga in open(sys.path[0]+'elenco_nomi.txt', 'r')]
+	cognomi_elenco = [riga.strip() for riga in open(sys.path[0]+'/elenco_cognomi.txt','r')]
+	nomi_elenco = [riga.strip() for riga in open(sys.path[0]+'/elenco_nomi.txt', 'r')]
 
 	def __init__(self):
 		self.nomi = copy.copy(self.nomi_elenco)
