@@ -1,0 +1,14 @@
+== What's this? ==
+
+A stupid script to generate fake italian email addresses.
+We use them for honeypot on lugbs.linux.it domain.
+
+== ToDO ==
+
+Add more email patterns:
+- name.surname@
+- surname.name@
+- name.firstletteresurname@
+- firstlettersurname.name@
+
+Random domain chooser
