@@ -449,7 +449,6 @@ garden
 gardin
 gardiner
 gardoni
-garibay
 garzoni
 gastaldo
 gaube
@@ -494,7 +493,6 @@ giboni
 gila
 gilardi
 gill
-gilroy
 giordani
 giorgi
 giosia
@@ -512,8 +510,6 @@ glennon
 gnesa
 gobbi
 gogli
-golay
-goldy
 gomez
 gonzaga
 gonzales
@@ -529,8 +525,6 @@ graf
 graham
 grande
 grassi
-gray
-grayson
 graziano
 grech
 greco
@@ -550,7 +544,6 @@ guerrini
 guggiari
 guidicelli
 guidotti
-guilfoyle
 gulfi
 guller
 gunther
@@ -573,10 +566,8 @@ harland
 harpes
 harrington
 hartt
-harvey
 hass
 haug
-hayers
 heffington
 hembree
 henderson
@@ -595,7 +586,6 @@ hildenbrand
 hill
 hilliard
 hilton
-hinchey
 hines
 hinrichs
 hixson
@@ -629,7 +619,6 @@ isabel
 isella
 isorni
 ita
-ixcaya
 jacobi
 jacobs
 jacobsen
@@ -694,10 +683,8 @@ lepori
 lequine
 lertora
 letzgus
-leys
 libelli
 liberini
-lightbody
 lima
 lindmeier
 lindrea
@@ -726,7 +713,6 @@ lurati
 luthi
 lutz
 luxel
-lynch
 maccagni
 macciantelli
 machett
@@ -758,7 +744,6 @@ mainini
 maire
 male
 malfanti
-malloy
 malugani
 malvatti
 mancini
@@ -818,14 +803,12 @@ mazzi
 mazzoleni
 mazzoncini
 mazzoni
-mccarthy
 mcclelland
 mcconnell
 mcdonald
 mcgivern
 mcgrath
 mcguire
-mchenry
 mclaughlin
 mclean
 mcnamara
@@ -849,7 +832,6 @@ messer
 methe
 metzner
 meulemeester
-meyer
 miccio
 micheau
 michel
@@ -899,7 +881,6 @@ monteiro
 montemezzani
 monteon
 monzulla
-moody
 moore
 mora
 moranda
@@ -930,18 +911,13 @@ mozzi
 mozzini
 mueller
 muggiasca
-mulcahy
 muller
 murer
-murphy
-murray
 murru
 muscio
 music
 musso
 muttoni
-myers
-myron
 nagel
 nance
 nardi
@@ -1021,7 +997,6 @@ pattee
 patten
 patterson
 pauli
-paynting
 peccia
 pedrasci
 pedrazzi
@@ -1052,7 +1027,6 @@ perez
 perico
 perini
 perret-gentil
-perry
 perucchi
 pescarmona
 pescia
@@ -1068,8 +1042,6 @@ peterson
 petralli
 petrini
 petrusci
-petty
-peyer
 pfister
 philippe
 phillips
@@ -1112,7 +1084,6 @@ ponti
 porra
 porzio
 poteet
-poynor
 pozzi
 prandi
 prater
@@ -1124,7 +1095,6 @@ previtali
 prevo
 price
 pura
-pybas
 quadri
 quagliani
 qualls
@@ -1142,7 +1112,6 @@ ramseier
 ranzoni
 ratti
 rattin
-rayroud
 razell
 rea
 reali
@@ -1154,12 +1123,10 @@ regazzi
 regusci
 reher
 reichmuth
-reiley
 remonda
 renoux
 repitti
 resch
-reyes
 rezzonico
 rhodes
 rianda
@@ -1203,34 +1170,26 @@ romer
 romerio
 rose
 rossetti
-rostomily
 roth
 roton
 rotta
 roualdes
-rouby
 rovelli
-royer
 rubalcava
 ruegger
 ruetschi
 ruff
 ruhofer
-ruley
-rumley
 rupp
 rusca
 rusconi
 russell
-ryan
-rymann
 sabatini
 sada
 sala
 salem
 sali
 salina
-sallery
 salmina
 salvi
 salvini
@@ -1254,9 +1213,6 @@ sasselli
 sassi
 satariano
 saunders
-saundry
-savoy
-sayre
 scalmazzi
 scamara
 scaroni
@@ -1271,7 +1227,6 @@ scheller
 schenardi
 scherrer
 schianni
-schiefferly
 schiffer
 schira
 schmid
@@ -1280,7 +1235,6 @@ schmutz
 schneble
 schneider
 schnepel
-schnyder
 schopen
 schroeder
 schroter
@@ -1328,7 +1282,6 @@ smail
 smith
 sneed
 soder
-sody
 solari
 solca
 soldati
@@ -1346,7 +1299,6 @@ speziotti
 spiati
 spiegelmacher
 spigaglia
-spilsbury
 spini
 squazzoni
 stanga
@@ -1372,7 +1324,6 @@ suardi
 succetti
 sullivan
 sutto
-symons
 tacchella
 tachelli
 tagliabue
@@ -1388,7 +1339,6 @@ tartaglia
 tavasci
 tavernas
 tavernetti
-taylor
 tedaldi
 tedeschini
 teel
@@ -1408,7 +1358,6 @@ thomas
 thome
 thompson
 thornburgh
-tichy
 tiedemann
 tigli
 tindall
@@ -1430,7 +1379,6 @@ tomlinson
 tommasini
 tonella
 tonini
-toohey
 toole
 torbidone
 tornisello
@@ -1487,7 +1435,6 @@ vassalli
 verdelet
 verdugo
 verlinde
-verreydt
 verzasconi
 vevoda
 viale
@@ -1508,13 +1455,6 @@ volpini
 von
 vorobjova
 vroomans
-yampat
-yates
-yeager
-yolo
-yop
-yorgason
-young
 zafini
 zali
 zaloum
