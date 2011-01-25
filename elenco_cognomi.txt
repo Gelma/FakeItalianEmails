@@ -557,7 +557,6 @@ hamberger
 hamel
 hamilton
 hammett
-hancox
 hansen
 hardingham
 harland
@@ -569,7 +568,6 @@ haug
 heffington
 hembree
 henderson
-hendrix
 henson
 herion
 hernandez
@@ -586,7 +584,6 @@ hilliard
 hilton
 hines
 hinrichs
-hixson
 hoare
 hobi
 hoffmann
@@ -682,7 +679,6 @@ luraschi
 lurati
 luthi
 lutz
-luxel
 maccagni
 macciantelli
 machett
@@ -911,7 +907,6 @@ nicolazzi
 nicols
 niebruegge
 nielsen
-nix
 nobili
 noci
 noe
@@ -1092,7 +1087,6 @@ regusci
 reher
 reichmuth
 remonda
-renoux
 repitti
 resch
 rezzonico
