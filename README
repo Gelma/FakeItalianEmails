@@ -14,6 +14,7 @@ About list name/surname:
 - add entries
 - remove foreign entries
 	- surname: A-M already done
+	- check Name and Nomi_seconda_lista_da_controllare.txt before merge
 
 Add more email patterns:
 - name.surname@
