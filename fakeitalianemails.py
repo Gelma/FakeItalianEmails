@@ -8,6 +8,7 @@ class OmenNomen:
 
 	cognomi_elenco = [riga.strip() for riga in open(sys.path[0]+'/elenco_cognomi.txt','r')]
 	nomi_elenco = [riga.strip() for riga in open(sys.path[0]+'/elenco_nomi.txt', 'r')]
+	separatori = ['.', '_', '-', '']
 
 	def __init__(self):
 		self.nomi = copy.copy(self.nomi_elenco)
@@ -36,15 +37,42 @@ class OmenNomen:
 		self.cognomi = self.cognomi[1:]
 		return cognome_da_tornare
 
-	def email(self,dominio):
+	def email(self, dominio=False, separatore=False, ordine=False, maiuscole=False):
 		"""Dammi un dominio, ti torno una email a cazzo"""
-		return self.nome()+'_'+self.cognome()+'@'+dominio
+
+		if not dominio: # se non è definito un dominio
+			dominio = 'example.com'
+		else:
+			if ' ' in dominio: # se ho più domini, ne scelgo uno a caso
+				dominio = random.choice(dominio.split())
+
+		if not separatore: # scelgo un separatore a caso
+			separatore = random.choice(self.separatori)
+
+		if not ordine: # scelgo un ordine a caso per nome e cognome # ToDo: riscrivere in forma più elegante e compatta
+			if random.randrange(2):
+				primo_elemento, secondo_elemento = self.nome(), self.cognome()
+			else:
+				primo_elemento, secondo_elemento = self.cognome(), self.nome()
+		elif ordine == 'n-c': # ordino per nome e cognome
+			primo_elemento, secondo_elemento = self.nome(), self.cognome()
+		else:
+			primo_elemento, secondo_elemento = self.cognome(), self.nome()
+
+		if not maiuscole: # ToDo: gestione con argomenti, ora faccio solo la scelta casuale
+			if random.randrange(2): # decido se mettere la maiuscola oppure no
+				if random.randrange(2): # se lo faccio, quale campo?
+					primo_elemento = primo_elemento[0].capitalize() + primo_elemento[1:]
+				else:
+					secondo_elemento = secondo_elemento[0].capitalize() + secondo_elemento[1:]
+
+		return "%s%s%s@%s" % (primo_elemento, separatore, secondo_elemento, dominio)
 
 if __name__ == "__main__":
 	import getopt
 
 	emails_to_create = 1	#Without arguments I use these defaults values:
-	domain_to_use = 'example.com'
+	domain_to_use = False
 
 	try: # parsing command line arguments
 		opts, args = getopt.getopt(sys.argv[1:], "hd:n:", ["help", "domain=", "number="])
@@ -55,7 +83,7 @@ if __name__ == "__main__":
 	for o, a in opts:
 		if o in ("-h", "--help"):
 			print "fakeitalianemails.py creates *real* fake italian email addresses"
-			print "Usage: fakeitalianemails.py [OPTIONS]\n\nOPTIONS are:\n\t-d, --domain\t specify domain name to use\n\t-n, --number\t specify how many addresses to create\n"
+			print "Usage: fakeitalianemails.py [OPTIONS]\n\nOPTIONS are:\n\t-d, --domain\t specify domain name to use (you can submit more domains separeted by space)\n\t-n, --number\t specify how many addresses to create\n\nExample: fakeitalianmails.py -n 10 -d 'example.com lugbs.linux.it'"
 			sys.exit()
 		elif o in ("-d", "--domain"):
 			domain_to_use = a
@@ -70,4 +98,4 @@ if __name__ == "__main__":
 
 	email_creator = OmenNomen()
 	for number in range(emails_to_create):
-		print email_creator.email(domain_to_use)
+		print email_creator.email(dominio=domain_to_use)
