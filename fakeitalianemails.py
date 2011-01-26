@@ -39,3 +39,35 @@ class OmenNomen:
 	def email(self,dominio):
 		"""Dammi un dominio, ti torno una email a cazzo"""
 		return self.nome()+'_'+self.cognome()+'@'+dominio
+
+if __name__ == "__main__":
+	import getopt
+
+	emails_to_create = 1	#Without arguments I use these defaults values:
+	domain_to_use = 'example.com'
+
+	try: # parsing command line arguments
+		opts, args = getopt.getopt(sys.argv[1:], "hd:n:", ["help", "domain=", "number="])
+	except getopt.GetoptError, err:
+		print str(err) # will print something like "option -a not recognized"
+		print "Try 'fakeitalianemails.py --help for more information."
+		sys.exit(2)
+	for o, a in opts:
+		if o in ("-h", "--help"):
+			print "fakeitalianemails.py creates *real* fake italian email addresses"
+			print "Usage: fakeitalianemails.py [OPTIONS]\n\nOPTIONS are:\n\t-d, --domain\t specify domain name to use\n\t-n, --number\t specify how many addresses to create\n"
+			sys.exit()
+		elif o in ("-d", "--domain"):
+			domain_to_use = a
+		elif o in ("-n", "--number"):
+			try:
+				emails_to_create = int(a)
+				assert emails_to_create > 0
+			except:
+				print "Error: number must be a *positive number*"
+				print "Try 'fakeitalianemails.py --help for more information."
+				sys.exit(2)
+
+	email_creator = OmenNomen()
+	for number in range(emails_to_create):
+		print email_creator.email(domain_to_use)
