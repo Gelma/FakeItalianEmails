@@ -18,3 +18,21 @@ About list name/surname:
 	- check Name and Nomi_seconda_lista_da_controllare.txt before merge
 	- merge Cognomi_lista_di_Livio.txt without check
 	- merge Cognomi_ok_da_unire_poi.txt Nomi_ok_da_unire_poi.txt without check
+
+== Screenshots ==
+
+gelma@vaio:~/dev/prg/FakeItalianEmails$ ./fakeitalianemails.py --help
+fakeitalianemails.py creates *real* fake italian email addresses
+Usage: fakeitalianemails.py [OPTIONS]
+
+OPTIONS are:
+	-d, --domain	 specify domain name to use (you can submit more domains separeted by space)
+	-n, --number	 specify how many addresses to create
+
+Example: fakeitalianmails.py -n 10 -d 'example.com lugbs.linux.it'
+gelma@vaio:~/dev/prg/FakeItalianEmails$ ./fakeitalianemails.py -n 5 -d lugbs.linux.it
+Moretti_cristian@lugbs.linux.it
+Gottini.cherubino@lugbs.linux.it
+Pizzoli_gianna@lugbs.linux.it
+albano-sciarini@lugbs.linux.it
+Semiramidegalfetti@lugbs.linux.it
