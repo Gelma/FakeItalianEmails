@@ -174,7 +174,7 @@ archinti
 arconati
 ardemagni
 ardenghi
-ardigoâ€™
+ardigo
 ardissino
 ardizzon
 ardovini
@@ -1154,7 +1154,7 @@ berlinguer
 berlusconi
 bernabe
 bernabei
-bernabó
+bernabo
 bernard
 bernardelli
 bernardi
@@ -1228,7 +1228,7 @@ bertona
 bertoncini
 bertone
 bertoni
-bertòs
+bertos
 bertossi
 bertossio
 bertosso
@@ -1323,7 +1323,7 @@ bignamini
 bignotti
 bignotto
 bigolotti
-billé
+bille
 bilotti
 bilotto
 bina
@@ -1975,8 +1975,8 @@ caiolo
 caiozzo
 caira
 cairo
-calà
-calabrã²
+cala
+calabra
 calabrese
 calabria
 calabro
@@ -2157,7 +2157,7 @@ candeo
 candia
 candiani
 candiano
-candìla
+candila
 candore
 candotti
 candotto
@@ -3725,7 +3725,7 @@ fabbiani
 fabbiano
 fabbri
 fabbrica
-fabèn
+faben
 fabiani
 fabiano
 fabris
@@ -3955,7 +3955,7 @@ ferrario
 ferraris
 ferraro
 ferrato
-ferraú
+ferrau
 ferrazza
 ferrazzano
 ferrazzi
@@ -4225,7 +4225,7 @@ francisci
 franco
 frandina
 frangipane
-franzelãn
+franzelan
 franzelli
 franzin
 franzinelli

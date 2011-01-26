@@ -332,7 +332,7 @@ gioele
 gioia
 giordano
 giorgio
-giosuè
+giosue
 giosuele
 giotto
 giovanni
@@ -462,7 +462,7 @@ modesto
 moira
 monica
 moreno
-mosè
+mose
 nadia
 narciso
 natale
@@ -471,7 +471,7 @@ nazzareno
 nestore
 nevio
 nicola
-niccolò
+niccolo
 nicoletta
 norberto
 norma
@@ -592,7 +592,7 @@ siriano
 siro
 sofia
 sonia
-sostene 
+sostene
 stanislao
 stefano
 stella
