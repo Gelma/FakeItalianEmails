@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import copy, random, sys
+import copy, datetime, random, sys
 
 class OmenNomen:
 	"""Torno indirizzi nomi/cognomi/email a cazzo"""
@@ -37,7 +37,7 @@ class OmenNomen:
 		self.cognomi = self.cognomi[1:]
 		return cognome_da_tornare
 
-	def email(self, dominio=False, separatore=False, ordine=False, maiuscole=False):
+	def email(self, dominio=False, separatore=False, ordine=False, maiuscole=False, numero_finale=False):
 		"""Dammi un dominio, ti torno una email a cazzo"""
 
 		if not dominio: # se non è definito un dominio
@@ -66,7 +66,17 @@ class OmenNomen:
 				else:
 					secondo_elemento = secondo_elemento[0].capitalize() + secondo_elemento[1:]
 
-		return "%s%s%s@%s" % (primo_elemento, separatore, secondo_elemento, dominio)
+		if not numero_finale: # scelgo un numero in coda (anno o incrementale)
+				percentuale = random.randrange(100)
+				if percentuale < 20: # metto anno di nascita
+						anno_corrente = datetime.datetime.now().year
+						numero_finale = str(anno_corrente - random.randrange(48))
+						if percentuale < 10: # metto numero a caso
+							numero_finale = str(random.randrange(70))
+						numero_finale = random.choice(self.separatori)+numero_finale
+				else: numero_finale=''
+
+		return "%s%s%s%s@%s" % (primo_elemento, separatore, secondo_elemento, numero_finale, dominio)
 
 if __name__ == "__main__":
 	import getopt
