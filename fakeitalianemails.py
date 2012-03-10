@@ -1,5 +1,32 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+fakeitalianemails.py creates *real* fake italian email addresses
+
+Usage: fakeitalianemails.py [OPTIONS]
+OPTIONS are:
+    -d, --domain   specify domain name to use (you can submit more domains separeted by space)
+    -n, --number   specify how many addresses to create
+    -w, --web      output as HTML comment
+
+    Example: fakeitalianemails.py -n 5 -d 'example.com lugbs.linux.it'"
+
+------
+
+   Copyright 2011-2012 - Andrea Gelmini (andrea.gelmini@gelma.net)
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+"""
 
 import copy, datetime, random, sys
 
@@ -87,7 +114,7 @@ class OmenNomen:
 if __name__ == "__main__":
 	import getopt
 
-	emails_to_create = 1	#Without arguments I use these defaults values:
+	emails_to_create = 1	# Without arguments I use these defaults values:
 	domain_to_use = False
 	web = False
 
@@ -95,12 +122,10 @@ if __name__ == "__main__":
 		opts, args = getopt.getopt(sys.argv[1:], "hd:n:w", ["help", "domain=", "number=", "web"])
 	except getopt.GetoptError, err:
 		print str(err) # will print something like "option -a not recognized"
-		sys.exit("Try 'fakeitalianemails.py --help for more information.")
+		sys.exit(__doc__)
 	for o, a in opts:
 		if o in ("-h", "--help"):
-			print "fakeitalianemails.py creates *real* fake italian email addresses"
-			print "Usage: fakeitalianemails.py [OPTIONS]\n\nOPTIONS are:\n\t-d, --domain\t specify domain name to use (you can submit more domains separeted by space)\n\t-n, --number\t specify how many addresses to create\n\nExample: fakeitalianmails.py -n 10 -d 'example.com lugbs.linux.it'"
-			sys.exit()
+			sys.exit(__doc__)
 		elif o in ("-d", "--domain"):
 			domain_to_use = a
 		elif o in ("-n", "--number"):
