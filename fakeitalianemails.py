@@ -37,7 +37,7 @@ class OmenNomen:
 		self.cognomi = self.cognomi[1:]
 		return cognome_da_tornare
 
-	def email(self, dominio=False, separatore=False, ordine=False, maiuscole=False, numero_finale=False):
+	def email(self, dominio=False, web=False, separatore=False, ordine=False, maiuscole=False, numero_finale=False):
 		"""Dammi un dominio, ti torno una email a cazzo"""
 
 		if not dominio: # se non è definito un dominio
@@ -45,6 +45,12 @@ class OmenNomen:
 		else:
 			if ' ' in dominio: # se ho più domini, ne scelgo uno a caso
 				dominio = random.choice(dominio.split())
+
+		if web is True:
+			web_testa = "<!-- "
+			web_coda  = " -->"
+		else:
+			web_testa = web_coda = ""
 
 		if not separatore: # scelgo un separatore a caso
 			separatore = random.choice(self.separatori)
@@ -76,20 +82,20 @@ class OmenNomen:
 						numero_finale = random.choice(self.separatori)+numero_finale
 				else: numero_finale=''
 
-		return "%s%s%s%s@%s" % (primo_elemento, separatore, secondo_elemento, numero_finale, dominio)
+		return "%s%s%s%s%s@%s%s" % (web_testa, primo_elemento, separatore, secondo_elemento, numero_finale, dominio, web_coda)
 
 if __name__ == "__main__":
 	import getopt
 
 	emails_to_create = 1	#Without arguments I use these defaults values:
 	domain_to_use = False
+	web = False
 
 	try: # parsing command line arguments
-		opts, args = getopt.getopt(sys.argv[1:], "hd:n:", ["help", "domain=", "number="])
+		opts, args = getopt.getopt(sys.argv[1:], "hd:n:w", ["help", "domain=", "number=", "web"])
 	except getopt.GetoptError, err:
 		print str(err) # will print something like "option -a not recognized"
-		print "Try 'fakeitalianemails.py --help for more information."
-		sys.exit(2)
+		sys.exit("Try 'fakeitalianemails.py --help for more information.")
 	for o, a in opts:
 		if o in ("-h", "--help"):
 			print "fakeitalianemails.py creates *real* fake italian email addresses"
@@ -103,9 +109,11 @@ if __name__ == "__main__":
 				assert emails_to_create > 0
 			except:
 				print "Error: number must be a *positive number*"
-				print "Try 'fakeitalianemails.py --help for more information."
+				print "Try 'fakeitalianemails.py --help' for more information."
 				sys.exit(2)
+		elif o in ("-w", "--web"):
+			web = True
 
 	email_creator = OmenNomen()
 	for number in range(emails_to_create):
-		print email_creator.email(dominio=domain_to_use)
+		print email_creator.email(dominio=domain_to_use, web=web)
