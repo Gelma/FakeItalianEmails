@@ -19,10 +19,11 @@ OPTIONS are:
 	-d, --domain	 specify domain name to use (you can submit more domains separeted by space)
 	-n, --number	 specify how many addresses to create
 
-Example: fakeitalianmails.py -n 10 -d 'example.com lugbs.linux.it'
-gelma@vaio:~/dev/prg/FakeItalianEmails$ ./fakeitalianemails.py -n 5 -d lugbs.linux.it
-Moretti_cristian@lugbs.linux.it
-Gottini.cherubino@lugbs.linux.it
-Pizzoli_gianna@lugbs.linux.it
-albano-sciarini@lugbs.linux.it
-Semiramidegalfetti@lugbs.linux.it
+Example:
+	./fakeitalianemails.py -n 10 -d 'example.com lugbs.linux.it'
+
+	Ubaldo.rizzotti@lugbs.linux.it
+	Caci.giovbattista@example.com
+	nigro-clateo.46@example.com
+	nazario_Tognascioli@lugbs.linux.it
+	Girando-castaniere@lugbs.linux.it
