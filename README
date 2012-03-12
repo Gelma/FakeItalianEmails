@@ -16,8 +16,9 @@ fakeitalianemails.py creates *real* fake italian email addresses
 Usage: fakeitalianemails.py [OPTIONS]
 
 OPTIONS are:
-	-d, --domain	 specify domain name to use (you can submit more domains separeted by space)
-	-n, --number	 specify how many addresses to create
+	-d, --domain     specify domain name to use (you can submit more domains separeted by space)
+	-n, --number     specify how many addresses to create
+	-w, --web        output as HTML comment
 
 Example:
 	./fakeitalianemails.py -n 10 -d 'example.com lugbs.linux.it'
